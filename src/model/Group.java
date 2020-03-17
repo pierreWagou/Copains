@@ -43,6 +43,7 @@ public class Group implements Externalizable {
       out.writeObject(new LinkedHashSet<Contact>(listContact));
   }
 
+	@SuppressWarnings("unchecked")
 	@Override
 	public void readExternal(ObjectInput in) throws IOException, ClassNotFoundException {
 		this.setName(in.readUTF());

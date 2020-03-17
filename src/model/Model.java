@@ -59,7 +59,8 @@ public class Model {
     oos.close();
   }
 
-  public void load() throws FileNotFoundException, IOException, ClassNotFoundException {
+  @SuppressWarnings("unchecked")
+public void load() throws FileNotFoundException, IOException, ClassNotFoundException {
     ObjectInputStream ois = new ObjectInputStream(new FileInputStream(this.file));
     listGroup.clear();
     ((Set<Group>) ois.readObject()).forEach(g -> {
