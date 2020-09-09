@@ -8,7 +8,6 @@ import java.util.LinkedHashSet;
 import java.util.Set;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
-import model.Contact;
 
 public class Group implements Externalizable {
 

@@ -32,14 +32,14 @@ public class Contact implements Externalizable {
   }
 
   public Contact(String nom, String prenom, Adresse adresse, LocalDate date, String sexe) {
-	    this.prenom = new SimpleStringProperty("", "prenom", prenom);
-	    this.nom = new SimpleStringProperty("", "nom", nom);
-	    this.adresse = new SimpleObjectProperty<Adresse>(adresse);
-	    this.naissance = new SimpleObjectProperty<LocalDate>("", "naissance", date);
-	    this.sexe = new SimpleStringProperty("", "sexe", sexe);
-	    this.fields = FXCollections.observableArrayList();
-      incompleteFields();
-	  }
+    this.prenom = new SimpleStringProperty("", "prenom", prenom);
+    this.nom = new SimpleStringProperty("", "nom", nom);
+    this.adresse = new SimpleObjectProperty<Adresse>(adresse);
+    this.naissance = new SimpleObjectProperty<LocalDate>("", "naissance", date);
+    this.sexe = new SimpleStringProperty("", "sexe", sexe);
+    this.fields = FXCollections.observableArrayList();
+    incompleteFields();
+  }
 
   private void incompleteFields(){
     checkField(this.prenom);

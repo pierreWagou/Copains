@@ -12,7 +12,6 @@ import java.util.LinkedHashSet;
 import java.util.Set;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
-import model.Group;
 
 public class Model {
 
@@ -30,12 +29,12 @@ public class Model {
 	  Group travail = new Group();
     travail.setName("Travail");
 
-	  Adresse addressePierre = new Adresse ("15 rue saint nicolas", "60200", "Compiegne", "France");
-	  Contact PierreRomon = new Contact("Romon", "Pierre", addressePierre, LocalDate.of(1997, 3, 21), "masculin");
+	  Adresse addressePierre = new Adresse ("12 rue Wagou", "60200", "Compiegne", "France");
+	  Contact PierreRomon = new Contact("Wagou", "Pierre", addressePierre, LocalDate.of(1997, 3, 21), "masculin");
 	  amis.getListContact().add(PierreRomon);
 
-	  Adresse addresseNico = new Adresse ("16 rue Marc Antoine Charpentier", "95520", "Osny", "France");
-	  Contact NicolasSchlegel = new Contact("Nicolas", "Schlegel", addresseNico, LocalDate.of(1999, 1, 28), "masculin");
+	  Adresse addresseNico = new Adresse ("QG de la ligue des justiciers", "95520", "Osny", "France");
+	  Contact NicolasSchlegel = new Contact("Super", "Man", addresseNico, LocalDate.of(1999, 1, 28), "masculin");
 	  famille.getListContact().add(NicolasSchlegel);
 
 	  Adresse addresseEtud1 = new Adresse ("15 rue du manoir", "60200", "Compiegne", "France");
